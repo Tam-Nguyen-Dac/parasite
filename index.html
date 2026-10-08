@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mô hình TAS APOHAIR</title>
-<meta name="description" content="Mô hình backlink TAS (Tiered Asset Stack) cho các cate APOHAIR: 5 tài sản phantom, 2 tier, 5 cate đích.">
+<title>Mô hình backlink APOHAIR</title>
+<meta name="description" content="Mô hình backlink TAS cho nhóm cate/subcate và mô hình Tier building cho blog topic Hair vendors của dự án APOHAIR.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,8 @@
     color: var(--ink);
     font-family: 'Be Vietnam Pro', 'Segoe UI', system-ui, -apple-system, sans-serif;
   }
-  .wrap { max-width: 1640px; margin: 0 auto; padding: 24px 16px 48px; }
+  .wrap { max-width: 1640px; margin: 0 auto; padding: 24px 16px 64px; }
+  .model + .model { margin-top: 72px; }
   .scroll { overflow-x: auto; }
   .scroll > svg { display: block; width: 100%; min-width: 980px; height: auto; filter: drop-shadow(0 6px 24px rgba(202, 51, 102, .08)); }
   svg text { font-family: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif; }
@@ -37,6 +38,7 @@
   .tp { font-size: 11.5px; fill: var(--brand); }
   .tm { font-size: 12.5px; fill: var(--muted); }
   .an { font-size: 19px; font-weight: 700; fill: var(--ink); }
+  .an2 { font-size: 17px; font-weight: 700; fill: var(--ink); }
   .bd { font-size: 11.5px; font-weight: 700; fill: var(--brand); }
   .ak { font-size: 14px; fill: var(--brand); }
   .am { font-size: 12.5px; fill: var(--muted); }
@@ -45,7 +47,7 @@
   .pl { font-size: 11.5px; font-weight: 600; fill: #5B4A54; }
   .legend {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px 32px;
     margin: 28px 8px 0;
     font-size: 15px;
@@ -55,71 +57,66 @@
   .legend .item { display: flex; gap: 14px; align-items: flex-start; }
   .legend .item svg { flex: none; margin-top: 6px; }
   .legend b { color: var(--ink); font-weight: 600; }
-  @media (max-width: 1100px) { .legend { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 560px) { .legend { grid-template-columns: 1fr; } }
+  @media (max-width: 1000px) { .legend { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px) { .legend { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="scroll">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 1140" role="img" aria-label="Mô hình TAS APOHAIR: 5 tài sản phantom, 2 tier, đẩy link về 5 cate">
-<defs><marker id="m-money" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#8F1E4A"/></marker><marker id="m-stack" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#CA3366"/></marker><marker id="m-blog" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#6F6168"/></marker><marker id="m-pbn" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#9A8A93"/></marker></defs>
-<rect x="20" y="20" width="1600" height="1100" rx="28" fill="#fff" stroke="#EADDE3" stroke-width="1.5"/>
+<main class="wrap">
+  <section class="model">
+    <div class="scroll">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 1020" role="img" aria-label="Mô hình backlink TAS cho nhóm cate/subcate dự án APOHAIR: 5 tài sản phantom, 2 tier, đẩy link về 5 cate">
+<defs><marker id="m1-money" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#8F1E4A"/></marker><marker id="m1-stack" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#CA3366"/></marker><marker id="m1-src" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#7E6F77"/></marker></defs>
+<rect x="20" y="20" width="1600" height="980" rx="28" fill="#fff" stroke="#EADDE3" stroke-width="1.5"/>
 <text x="68" y="78" class="ttl">Mô hình backlink TAS cho nhóm cate/subcate dự án APOHAIR</text>
 <text x="68" y="102" class="sub">5 tài sản phantom · 2 tier · 5 cate đích</text>
 <line x1="200" y1="312" x2="1580" y2="312" stroke="#E6D6DD" stroke-width="1.2" stroke-dasharray="2 5"/>
 <line x1="200" y1="850" x2="1580" y2="850" stroke="#E6D6DD" stroke-width="1.2" stroke-dasharray="2 5"/>
-<line x1="200" y1="950" x2="1580" y2="950" stroke="#E6D6DD" stroke-width="1.2" stroke-dasharray="2 5"/>
 <text x="68" y="200" class="rl">TẦNG ĐÍCH</text><text x="68" y="219" class="rs">money site · 5</text>
 <text x="68" y="437" class="rl">TIER 1</text><text x="68" y="456" class="rs">trỏ thẳng · 3</text>
 <text x="68" y="692" class="rl">TIER 2</text><text x="68" y="711" class="rs">nuôi tier 1 · 2</text>
-<text x="68" y="893" class="rl">NGUỒN ĐẨY</text><text x="68" y="912" class="rs">tier 2 · 4 box</text>
-<text x="68" y="1043" class="rl">NGUỒN ĐẨY</text><text x="68" y="1062" class="rs">tier 1 · 6 box</text>
+<text x="68" y="912" class="rl">NGUỒN ĐẨY</text><text x="68" y="931" class="rs">5 box · 1 box/tài sản</text>
 <rect x="202" y="340" width="1378" height="470" rx="22" fill="#FDF3F7" stroke="#F3D3DF" stroke-width="1.4"/>
 <line x1="222" y1="565" x2="1560" y2="565" stroke="#F0D5DF" stroke-width="1.2" stroke-dasharray="2 5"/>
 <text x="222" y="780" class="cap">HỆ PHANTOM</text><text x="222" y="796" class="cap">5 TÀI SẢN</text>
-<path d="M380,380 L380,350 C380,300 311.0,300 311.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M450,380 L450,350 C450,312 621.0,312 621.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M635,635 L635,350 C635,292 351.0,292 351.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M668,635 L668,350 C668,318 861.0,318 861.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M800,380 L800,350 C800,297 391.0,297 391.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M900,380 L900,350 C900,312 921.0,312 921.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M1105,635 L1105,350 C1105,304 1141.0,304 1141.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M1155,635 L1155,350 C1155,298 1411.0,298 1411.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M1230,380 L1230,350 C1230,316 1181.0,316 1181.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
-<path d="M1400,380 L1400,350 C1400,300 1451.0,300 1451.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m-money)"/>
+<path d="M380,380 L380,350 C380,300 311.0,300 311.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M450,380 L450,350 C450,312 621.0,312 621.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M635,635 L635,350 C635,292 351.0,292 351.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M668,635 L668,350 C668,318 861.0,318 861.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M800,380 L800,350 C800,297 391.0,297 391.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M900,380 L900,350 C900,312 921.0,312 921.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M1105,635 L1105,350 C1105,304 1141.0,304 1141.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M1155,635 L1155,350 C1155,298 1411.0,298 1411.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M1230,380 L1230,350 C1230,316 1181.0,316 1181.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
+<path d="M1400,380 L1400,350 C1400,300 1451.0,300 1451.0,260" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m1-money)"/>
 <path d="M602,442.5 H701" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M602,442.5 H701" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m-stack)"/>
+<path d="M602,442.5 H701" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m1-stack)"/>
 <path d="M1081,442.5 H1180" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M1081,442.5 H1180" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m-stack)"/>
+<path d="M1081,442.5 H1180" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m1-stack)"/>
 <path d="M545,635 C545,570 470,570 470,505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M545,635 C545,570 470,570 470,505" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m-stack)"/>
+<path d="M545,635 C545,570 470,570 470,505" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m1-stack)"/>
 <path d="M775,635 C775,570 740,570 740,505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M775,635 C775,570 740,570 740,505" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m-stack)"/>
+<path d="M775,635 C775,570 740,570 740,505" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m1-stack)"/>
 <path d="M1000,635 C1000,570 1040,570 1040,505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M1000,635 C1000,570 1040,570 1040,505" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m-stack)"/>
+<path d="M1000,635 C1000,570 1040,570 1040,505" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m1-stack)"/>
 <path d="M1270,635 C1270,570 1260,570 1260,505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M1270,635 C1270,570 1260,570 1260,505" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m-stack)"/>
-<path d="M271,1020 V993 Q271,985 279,985 H308 Q316,985 316,977 V505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M271,1020 V993 Q271,985 279,985 H308 Q316,985 316,977 V505" fill="none" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m-blog)"/>
-<path d="M421,1020 V993 Q421,985 413,985 H384 Q376,985 376,977 V505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M421,1020 V993 Q421,985 413,985 H384 Q376,985 376,977 V505" fill="none" stroke="#9A8A93" stroke-width="2.2" stroke-dasharray="1.5 5" stroke-linecap="round" marker-end="url(#m-pbn)"/>
-<path d="M816,1020 V993 Q816,985 824,985 H853 Q861,985 861,977 V505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M816,1020 V993 Q816,985 824,985 H853 Q861,985 861,977 V505" fill="none" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m-blog)"/>
-<path d="M966,1020 V993 Q966,985 958,985 H929 Q921,985 921,977 V505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M966,1020 V993 Q966,985 958,985 H929 Q921,985 921,977 V505" fill="none" stroke="#9A8A93" stroke-width="2.2" stroke-dasharray="1.5 5" stroke-linecap="round" marker-end="url(#m-pbn)"/>
-<path d="M1350,1020 V993 Q1350,985 1358,985 H1387 Q1395,985 1395,977 V505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M1350,1020 V993 Q1350,985 1358,985 H1387 Q1395,985 1395,977 V505" fill="none" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m-blog)"/>
-<path d="M1500,1020 V993 Q1500,985 1492,985 H1463 Q1455,985 1455,977 V505" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M1500,1020 V993 Q1500,985 1492,985 H1463 Q1455,985 1455,977 V505" fill="none" stroke="#9A8A93" stroke-width="2.2" stroke-dasharray="1.5 5" stroke-linecap="round" marker-end="url(#m-pbn)"/>
-<path d="M581,870 V760" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M581,870 V760" fill="none" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m-blog)"/>
-<path d="M721,870 V760" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M721,870 V760" fill="none" stroke="#9A8A93" stroke-width="2.2" stroke-dasharray="1.5 5" stroke-linecap="round" marker-end="url(#m-pbn)"/>
-<path d="M1060,870 V760" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M1060,870 V760" fill="none" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m-blog)"/>
-<path d="M1200,870 V760" fill="none" stroke="#fff" stroke-width="6"/>
-<path d="M1200,870 V760" fill="none" stroke="#9A8A93" stroke-width="2.2" stroke-dasharray="1.5 5" stroke-linecap="round" marker-end="url(#m-pbn)"/>
+<path d="M1270,635 C1270,570 1260,570 1260,505" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m1-stack)"/>
+<path d="M346,880 V505" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M346,880 V505" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m1-src)"/>
+<path d="M651,880 V760" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M651,880 V760" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m1-src)"/>
+<rect x="625.8" y="805" width="50.400000000000006" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
+<text x="651" y="819" class="pl" text-anchor="middle">7 link</text>
+<path d="M891,880 V505" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M891,880 V505" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m1-src)"/>
+<rect x="859.4" y="525" width="63.2" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
+<text x="891" y="539" class="pl" text-anchor="middle">200 link</text>
+<path d="M1130,880 V760" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M1130,880 V760" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m1-src)"/>
+<path d="M1435,880 V505" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M1435,880 V505" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m1-src)"/>
+<rect x="1403.4" y="525" width="63.2" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
+<text x="1435" y="539" class="pl" text-anchor="middle">200 link</text>
 <rect x="222" y="150" width="258" height="110" rx="14" fill="#FAE0EA" stroke="#CA3366" stroke-width="2"/>
 <text x="240" y="188" class="tt">Cate Wig</text>
 <text x="240" y="212" class="tp">/human-hair-wigs-wholesale/</text>
@@ -147,13 +144,13 @@
 <text x="553.0" y="415.5" class="bd" text-anchor="middle">AS 84</text>
 <text x="246" y="452" class="ak">difference between a wig and a weave</text>
 <text x="246" y="480" class="am">Vol 110 · 53 results · KD 0</text>
-<rect x="950" y="635" width="360" height="125" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
-<circle cx="974" cy="667" r="6.5" fill="#00C4CC"/>
-<text x="992" y="673" class="an">Canva Site</text>
-<rect x="1228" y="654" width="66" height="24" rx="12" fill="#FAE0EA"/>
-<text x="1261.0" y="670.5" class="bd" text-anchor="middle">AS 100</text>
-<text x="974" y="707" class="ak">Hair extensions for fine hair</text>
-<text x="974" y="735" class="am">Vol 1900 · 10 results · KD 17</text>
+<rect x="701" y="380" width="380" height="125" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
+<circle cx="725" cy="412" r="6.5" fill="#111111"/>
+<text x="743" y="418" class="an">Squarespace</text>
+<rect x="999" y="399" width="66" height="24" rx="12" fill="#FAE0EA"/>
+<text x="1032.0" y="415.5" class="bd" text-anchor="middle">AS 75</text>
+<text x="725" y="452" class="ak">raw vs virgin hair</text>
+<text x="725" y="480" class="am">Vol 210 · 102 results · KD 3</text>
 <rect x="1180" y="380" width="380" height="125" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
 <circle cx="1204" cy="412" r="6.5" fill="#7248B9"/>
 <text x="1222" y="418" class="an">Google Site</text>
@@ -168,71 +165,149 @@
 <text x="782.0" y="670.5" class="bd" text-anchor="middle">AS 72</text>
 <text x="495" y="707" class="ak">what is a bundle of hair</text>
 <text x="495" y="735" class="am">Vol 170 · 200 results · KD 9</text>
-<rect x="701" y="380" width="380" height="125" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
-<circle cx="725" cy="412" r="6.5" fill="#111111"/>
-<text x="743" y="418" class="an">Squarespace</text>
-<rect x="999" y="399" width="66" height="24" rx="12" fill="#FAE0EA"/>
-<text x="1032.0" y="415.5" class="bd" text-anchor="middle">AS 75</text>
-<text x="725" y="452" class="ak">raw vs virgin hair</text>
-<text x="725" y="480" class="am">Vol 210 · 102 results · KD 3</text>
-<rect x="206.0" y="1020" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
-<text x="220.0" y="1043" class="sn">Blog 2.0</text>
-<text x="220.0" y="1062" class="ss">đẩy Myshopify</text>
-<rect x="356.0" y="1020" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#9A8A93" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
-<text x="370.0" y="1043" class="sn">PBN backlink</text>
-<text x="370.0" y="1062" class="ss">đẩy Myshopify</text>
-<rect x="751.0" y="1020" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
-<text x="765.0" y="1043" class="sn">Blog 2.0</text>
-<text x="765.0" y="1062" class="ss">đẩy Squarespace</text>
-<rect x="901.0" y="1020" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#9A8A93" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
-<text x="915.0" y="1043" class="sn">PBN backlink</text>
-<text x="915.0" y="1062" class="ss">đẩy Squarespace</text>
-<rect x="1285.0" y="1020" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
-<text x="1299.0" y="1043" class="sn">Blog 2.0</text>
-<text x="1299.0" y="1062" class="ss">đẩy Google Site</text>
-<rect x="1435.0" y="1020" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#9A8A93" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
-<text x="1449.0" y="1043" class="sn">PBN backlink</text>
-<text x="1449.0" y="1062" class="ss">đẩy Google Site</text>
-<rect x="516.0" y="870" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
-<text x="530.0" y="893" class="sn">Blog 2.0</text>
-<text x="530.0" y="912" class="ss">đẩy odoo.com</text>
-<rect x="656.0" y="870" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#9A8A93" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
-<text x="670.0" y="893" class="sn">PBN backlink</text>
-<text x="670.0" y="912" class="ss">đẩy odoo.com</text>
-<rect x="995.0" y="870" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
-<text x="1009.0" y="893" class="sn">Blog 2.0</text>
-<text x="1009.0" y="912" class="ss">đẩy Canva Site</text>
-<rect x="1135.0" y="870" width="130" height="56" rx="12" fill="#FBF8F9" stroke="#9A8A93" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
-<text x="1149.0" y="893" class="sn">PBN backlink</text>
-<text x="1149.0" y="912" class="ss">đẩy Canva Site</text>
-<rect x="287.0" y="525" width="58" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="316" y="539" class="pl" text-anchor="middle">100 link</text>
-<rect x="352.0" y="525" width="48" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="376" y="539" class="pl" text-anchor="middle">7 link</text>
-<rect x="832.0" y="525" width="58" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="861" y="539" class="pl" text-anchor="middle">100 link</text>
-<rect x="897.0" y="525" width="48" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="921" y="539" class="pl" text-anchor="middle">7 link</text>
-<rect x="1366.0" y="525" width="58" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="1395" y="539" class="pl" text-anchor="middle">100 link</text>
-<rect x="1431.0" y="525" width="48" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="1455" y="539" class="pl" text-anchor="middle">7 link</text>
-<rect x="552.0" y="805" width="58" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="581" y="819" class="pl" text-anchor="middle">100 link</text>
-<rect x="697.0" y="805" width="48" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="721" y="819" class="pl" text-anchor="middle">7 link</text>
-<rect x="1031.0" y="805" width="58" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="1060" y="819" class="pl" text-anchor="middle">100 link</text>
-<rect x="1176.0" y="805" width="48" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
-<text x="1200" y="819" class="pl" text-anchor="middle">7 link</text>
+<rect x="950" y="635" width="360" height="125" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
+<circle cx="974" cy="667" r="6.5" fill="#00C4CC"/>
+<text x="992" y="673" class="an">Canva Site</text>
+<rect x="1228" y="654" width="66" height="24" rx="12" fill="#FAE0EA"/>
+<text x="1261.0" y="670.5" class="bd" text-anchor="middle">AS 100</text>
+<text x="974" y="707" class="ak">Hair extensions for fine hair</text>
+<text x="974" y="735" class="am">Vol 1900 · 10 results · KD 17</text>
+<rect x="261.0" y="880" width="170" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="275.0" y="903" class="sn">Guest Post outreach</text>
+<text x="275.0" y="922" class="ss">đẩy Myshopify</text>
+<rect x="566.0" y="880" width="170" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="580.0" y="903" class="sn">PBN backlink</text>
+<text x="580.0" y="922" class="ss">đẩy odoo.com</text>
+<rect x="806.0" y="880" width="170" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="820.0" y="903" class="sn">Blog 2.0</text>
+<text x="820.0" y="922" class="ss">đẩy Squarespace</text>
+<rect x="1045.0" y="880" width="170" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="1059.0" y="903" class="sn">GSA</text>
+<text x="1059.0" y="922" class="ss">đẩy Canva Site</text>
+<rect x="1350.0" y="880" width="170" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="1364.0" y="903" class="sn">Blog 2.0</text>
+<text x="1364.0" y="922" class="ss">đẩy Google Site</text>
 </svg>
-  </div>
-  <div class="legend">
+    </div>
+    <div class="legend">
     <div class="item"><svg width="64" height="14" viewBox="0 0 64 14"><line x1="2" y1="7" x2="54" y2="7" stroke="#8F1E4A" stroke-width="2.6"/><path d="M52,1.5 L63,7 L52,12.5 Z" fill="#8F1E4A"/></svg><div><b>Link về money site</b> — 10 link, trỏ thẳng vào 5 cate trên apohair.com</div></div>
     <div class="item"><svg width="64" height="14" viewBox="0 0 64 14"><line x1="2" y1="7" x2="54" y2="7" stroke="#CA3366" stroke-width="2.2"/><path d="M52,1.5 L63,7 L52,12.5 Z" fill="#CA3366"/></svg><div><b>Link stack</b> — 6 link, tier 2 nuôi tier 1 và tier 1 nuôi nhau</div></div>
-    <div class="item"><svg width="64" height="14" viewBox="0 0 64 14"><line x1="2" y1="7" x2="54" y2="7" stroke="#6F6168" stroke-width="2" stroke-dasharray="7 6"/><path d="M52,1.5 L63,7 L52,12.5 Z" fill="#6F6168"/></svg><div><b>Nguồn đẩy Blog 2.0</b> — 100 link vào mỗi tài sản, tổng 500 link</div></div>
-    <div class="item"><svg width="64" height="14" viewBox="0 0 64 14"><line x1="2" y1="7" x2="54" y2="7" stroke="#9A8A93" stroke-width="2.2" stroke-dasharray="1.5 5" stroke-linecap="round"/><path d="M52,1.5 L63,7 L52,12.5 Z" fill="#9A8A93"/></svg><div><b>Nguồn đẩy PBN backlink</b> — 7 link vào mỗi tài sản, tổng 35 link</div></div>
-  </div>
-</div>
+    <div class="item"><svg width="64" height="14" viewBox="0 0 64 14"><line x1="2" y1="7" x2="54" y2="7" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6"/><path d="M52,1.5 L63,7 L52,12.5 Z" fill="#7E6F77"/></svg><div><b>Nguồn đẩy ngoài</b> — mỗi tài sản 1 box: Blog 2.0 đẩy 200 link vào Google Site và Squarespace (tổng 400 link), PBN backlink đẩy 7 link vào odoo.com, GSA đẩy Canva Site, Guest Post outreach đẩy Myshopify</div></div>
+    </div>
+  </section>
+  <section class="model">
+    <div class="scroll">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 1080" role="img" aria-label="Mô hình Tier building cho Blog topic Hair vendors: hub page, 2 cluster page, 3 tài sản tier 1 và 2 nền tảng đăng">
+<defs><marker id="m2-money" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#8F1E4A"/></marker><marker id="m2-stack" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#CA3366"/></marker><marker id="m2-src" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#7E6F77"/></marker></defs>
+<rect x="20" y="20" width="1600" height="1040" rx="28" fill="#fff" stroke="#EADDE3" stroke-width="1.5"/>
+<text x="68" y="78" class="ttl">Mô hình Tier building cho Blog topic Hair vendors</text>
+<text x="68" y="102" class="sub">1 hub page · 2 cluster page · 3 tài sản tier 1 · 2 nền tảng đăng</text>
+<line x1="200" y1="212" x2="1580" y2="212" stroke="#E6D6DD" stroke-width="1.2" stroke-dasharray="2 5"/>
+<line x1="200" y1="350" x2="1580" y2="350" stroke="#E6D6DD" stroke-width="1.2" stroke-dasharray="2 5"/>
+<line x1="200" y1="690" x2="1580" y2="690" stroke="#E6D6DD" stroke-width="1.2" stroke-dasharray="2 5"/>
+<line x1="200" y1="920" x2="1580" y2="920" stroke="#E6D6DD" stroke-width="1.2" stroke-dasharray="2 5"/>
+<text x="68" y="150" class="rl">NGUỒN ĐẨY</text><text x="68" y="169" class="rs">cho HTML publish</text>
+<text x="68" y="270" class="rl">NỀN TẢNG ĐĂNG</text><text x="68" y="289" class="rs">trỏ hub · 2</text>
+<text x="68" y="480" class="rl">TẦNG ĐÍCH</text><text x="68" y="499" class="rs">hub + 2 cluster · 3 trang</text>
+<text x="68" y="815" class="rl">TIER 1</text><text x="68" y="834" class="rs">trỏ hub + cluster · 3</text>
+<text x="68" y="985" class="rl">NGUỒN ĐẨY</text><text x="68" y="1004" class="rs">tier 1 · 6 box</text>
+<path d="M402.0,315 C402.0,352 700,352 700,390" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M1380.0,315 C1380.0,352 1082,352 1082,390" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M380,790 V625" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M540,790 C540,730 770,730 770,700 V470" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M891,790 V470" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M780,790 C780,720 560,720 560,625" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M1000,790 C1000,720 1220,720 1220,625" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M1440,790 V625" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M1230,790 C1230,730 1010,730 1010,700 V470" fill="none" stroke="#8F1E4A" stroke-width="2.4" marker-end="url(#m2-money)"/>
+<path d="M540,545 C540,470 570,425 611,425" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M540,545 C540,470 570,425 611,425" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m2-stack)"/>
+<path d="M1240,545 C1240,470 1212,425 1171,425" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M1240,545 C1240,470 1212,425 1171,425" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m2-stack)"/>
+<path d="M1120,585 H662" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M1120,585 H662" fill="none" stroke="#CA3366" stroke-width="2.2" marker-end="url(#m2-stack)"/>
+<path d="M1280,176 V235" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M1280,176 V235" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m2-src)"/>
+<path d="M1460,176 V235" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M1460,176 V235" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m2-src)"/>
+<rect x="1431.6" y="196" width="56.800000000000004" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
+<text x="1460" y="210" class="pl" text-anchor="middle">50 link</text>
+<path d="M370,960 V860" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M370,960 V860" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m2-src)"/>
+<path d="M530,960 V860" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M530,960 V860" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m2-src)"/>
+<rect x="501.6" y="900" width="56.800000000000004" height="20" rx="10" fill="#fff" stroke="#DCC9D2" stroke-width="1"/>
+<text x="530" y="914" class="pl" text-anchor="middle">50 link</text>
+<path d="M811,960 V860" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M811,960 V860" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m2-src)"/>
+<path d="M971,960 V860" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M971,960 V860" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m2-src)"/>
+<path d="M1252,960 V860" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M1252,960 V860" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m2-src)"/>
+<path d="M1412,960 V860" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M1412,960 V860" fill="none" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#m2-src)"/>
+<rect x="611" y="390" width="560" height="80" rx="14" fill="#FAE0EA" stroke="#CA3366" stroke-width="2"/>
+<text x="629" y="428" class="tt">Hub page blog</text>
+<text x="629" y="452" class="tp">https://apohair.com/wholesale-human-hair-vendors/</text>
+<rect x="222" y="545" width="440" height="80" rx="14" fill="#FAE0EA" stroke="#CA3366" stroke-width="2"/>
+<text x="240" y="583" class="tt">Cluster page</text>
+<text x="240" y="607" class="tp">https://apohair.com/human-hair-wig-vendors/</text>
+<rect x="1120" y="545" width="440" height="80" rx="14" fill="#FAE0EA" stroke="#CA3366" stroke-width="2"/>
+<text x="1138" y="583" class="tt">Cluster page</text>
+<text x="1138" y="607" class="tp">https://apohair.com/wholesale-hair-extension-vendors/</text>
+<rect x="222" y="235" width="360" height="80" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
+<text x="242" y="269" class="an2">Social platform</text>
+<text x="242" y="293" class="am">Substack · Scribd · Isuuu · Pixnet.net</text>
+<rect x="1200" y="235" width="360" height="80" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
+<text x="1220" y="269" class="an2">HTML publish platform</text>
+<text x="1220" y="293" class="am">Script Google · Pages.dev · GitHub · Created.app</text>
+<rect x="290" y="790" width="320" height="70" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
+<circle cx="314" cy="822" r="6.5" fill="#7248B9"/>
+<text x="332" y="828" class="an">Google Site</text>
+<rect x="528" y="809" width="66" height="24" rx="12" fill="#FAE0EA"/>
+<text x="561.0" y="825.5" class="bd" text-anchor="middle">AS 100</text>
+<rect x="731" y="790" width="320" height="70" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
+<circle cx="755" cy="822" r="6.5" fill="#00C4CC"/>
+<text x="773" y="828" class="an">Canva Site</text>
+<rect x="969" y="809" width="66" height="24" rx="12" fill="#FAE0EA"/>
+<text x="1002.0" y="825.5" class="bd" text-anchor="middle">AS 100</text>
+<rect x="1172" y="790" width="320" height="70" rx="14" fill="#fff" stroke="#8F1E4A" stroke-width="2"/>
+<circle cx="1196" cy="822" r="6.5" fill="#111111"/>
+<text x="1214" y="828" class="an">Squarespace</text>
+<rect x="1410" y="809" width="66" height="24" rx="12" fill="#FAE0EA"/>
+<text x="1443.0" y="825.5" class="bd" text-anchor="middle">AS 75</text>
+<rect x="1202.0" y="124" width="156" height="52" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="1216.0" y="147" class="sn">Forum/Bookmark</text>
+<text x="1216.0" y="166" class="ss">đẩy HTML publish</text>
+<rect x="1382.0" y="124" width="156" height="52" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="1396.0" y="147" class="sn">Blog 2.0</text>
+<text x="1396.0" y="166" class="ss">đẩy HTML publish</text>
+<rect x="297.0" y="960" width="146" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="311.0" y="983" class="sn">Forum/Bookmark</text>
+<text x="311.0" y="1002" class="ss">đẩy Google Site</text>
+<rect x="457.0" y="960" width="146" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="471.0" y="983" class="sn">Blog 2.0</text>
+<text x="471.0" y="1002" class="ss">đẩy Google Site</text>
+<rect x="738.0" y="960" width="146" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="752.0" y="983" class="sn">Forum/Bookmark</text>
+<text x="752.0" y="1002" class="ss">đẩy Canva Site</text>
+<rect x="898.0" y="960" width="146" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="912.0" y="983" class="sn">PBN backlink</text>
+<text x="912.0" y="1002" class="ss">đẩy Canva Site</text>
+<rect x="1179.0" y="960" width="146" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="1193.0" y="983" class="sn">Forum/Bookmark</text>
+<text x="1193.0" y="1002" class="ss">đẩy Squarespace</text>
+<rect x="1339.0" y="960" width="146" height="56" rx="12" fill="#FBF8F9" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round"/>
+<text x="1353.0" y="983" class="sn">GSA</text>
+<text x="1353.0" y="1002" class="ss">đẩy Squarespace</text>
+</svg>
+    </div>
+    <div class="legend">
+    <div class="item"><svg width="64" height="14" viewBox="0 0 64 14"><line x1="2" y1="7" x2="54" y2="7" stroke="#8F1E4A" stroke-width="2.6"/><path d="M52,1.5 L63,7 L52,12.5 Z" fill="#8F1E4A"/></svg><div><b>Backlink về hub và cluster</b> — 9 link từ 3 tài sản tier 1 và 2 nền tảng đăng</div></div>
+    <div class="item"><svg width="64" height="14" viewBox="0 0 64 14"><line x1="2" y1="7" x2="54" y2="7" stroke="#CA3366" stroke-width="2.2"/><path d="M52,1.5 L63,7 L52,12.5 Z" fill="#CA3366"/></svg><div><b>Internal link</b> — 3 link: cluster về hub (2), cluster extension về cluster wig (1)</div></div>
+    <div class="item"><svg width="64" height="14" viewBox="0 0 64 14"><line x1="2" y1="7" x2="54" y2="7" stroke="#7E6F77" stroke-width="2" stroke-dasharray="7 6"/><path d="M52,1.5 L63,7 L52,12.5 Z" fill="#7E6F77"/></svg><div><b>Nguồn đẩy ngoài</b> — mỗi tài sản tier 1 có Forum/Bookmark và 1 nguồn thứ hai: Blog 2.0 (50 link) cho Google Site, PBN backlink cho Canva Site, GSA cho Squarespace. HTML publish platform dùng Forum/Bookmark và Blog 2.0 (50 link)</div></div>
+    </div>
+  </section>
+</main>
 </body>
 </html>
